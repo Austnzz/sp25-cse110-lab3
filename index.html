@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting notes</title>
+</head>
+<body>
+    <header>
+        <h1>Pomodoro Timer First Brainstorm</h1>
+        <h2>Date: April 12 2025</h2>
+    </header>
+    <nav>
+        <h3>Navigation Bar</h3>
+        <ul>
+            <li><a href="#attendance">Attendance</a></li>
+            <li><a href="#agenda">Agenda</a></li>
+            <li><a href="#old">Unfinished Business</a></li>
+            <li><a href="#new">New Business</a></li>
+            <li><a href="#misc">Misc / Q & A</a></li>
+            <li><a href="#media">Diagrams & Recordings</a></li>
+            <li><a href="#form">Forms Testing</a></li>
+        </ul>
+        <hr />
+    </nav>
+    <main>
+        <!-- Attendance -->
+        <section id="attendance">
+            <h2>Attendance</h2>
+            <p><strong>Present:</strong></p>
+            <ul>
+                <li>Austin</li>
+                <li>Albert</li>
+                <li>Charlie</li>
+                <li>Inchul</li>
+                <li>Minnie</li>
+                <li>Nadine</li>
+                <li>Prachi</li>
+                <li>Samantha</li>
+                <li>Skyler</li>
+                <li>Srujam</li>
+                <li>Svetlana</li>
+            </ul>
+            <p><strong>Absent:</strong> none</p>
+        </section>
+        <hr />
+        
+        <!-- Agenda for the fday-->
+        <section id="agenda">
+            <h2>Agenda</h2>
+            <ol>
+                <li>Check‑in &amp; icebreaker maybe</li>
+                <li>Talk over our current progress</li>
+                <li>Demo our work and compare to existing products</li>
+                <li>Assign what to do next</li>
+            </ol>
+        </section>
+        <hr />
+        
+        <!-- old stuff -->
+        <section id="old">
+            <h2>Old Stuff We Didn't Do Yet</h2>
+            <p>Decide the UI/UX color palettes</p>
+        </section>
+        <hr />
+        
+        <!-- New business -->
+        <section id="new">
+            <h2>New Stuff</h2>
+            <ul>
+                <li><em>Come to Decision:</em> What <b>IDEAS</b> do we have for the project</li>
+                <li>Schedule everyone who has time for design review on April 20.</li>
+            </ul>
+        </section>
+        <hr />
+        
+        <!-- Misc -->
+        <section id="misc">
+            <h2>Misc / Questions</h2>
+            <details>
+                <summary>What if both team members can't figure out a task?</summary>
+                <p>We’ll contact our TA</p>
+            </details>
+            <p>General reminder: next meeting is Friday 12pm same place.</p>
+        </section>
+        <hr />
+        
+        <!-- Videos and Audio -->
+        <section id="media">
+            <h2>Diagrams &amp; Recordings</h2>
+          
+            <figure>
+                <img src="mediaAssets/PowellRangersLOGO.png" alt="Sketch of Branding logo" width="400" />
+                <figcaption>Logo Sketch</figcaption>
+            </figure>
+          
+            <h3>Audio TEst</h3>
+            <audio controls src="mediaAssets/audio1.mp3"></audio>
+          
+            <h3>Video</h3>
+            <video controls width="400">
+                <source src="mediaAssets/video1.mp4" type="video/mp4" />
+            </video>
+        </section>
+        <hr />
+         
+          
+        <section id="form">
+            <h2>Quick Feedback Form</h2>
+            <form>
+                <fieldset>
+                    <legend>Your overall mood?</legend>
+                    
+                    <input type="radio" id="m1" name="mood" value="😀" />
+                    <label for="m1">😀 Great</label><br />
+
+                    <input type="radio" id="m2" name="mood" value="😐" />
+                    <label for="m2">😐 Okay</label><br />
+
+                    <input type="radio" id="m3" name="mood" value="😞" />
+                    <label for="m3">😞 Meh</label>
+                </fieldset>
+
+            <label for="due">Cool Calender thing: </label>
+            <input type="date" id="due" name="due" /><br /><br />
+
+            <label for="idea">Next Ideas?</label><br />
+            <textarea id="idea" rows="3" cols="40"
+                placeholder="Type anything…"></textarea><br /><br />
+
+            <button type="submit">Submit Button</button>
+            </form>
+        </section>
+        
+        <div id="filler"></div>
+    </main>
+    <footer>
+        <hr />
+        <p>CSE 110 SP25</p>
+        <span id="build">Testing span: <time datetime="2025-04-13">April 13 2025</time></span>
+    </footer>
+</body>
+</html>
