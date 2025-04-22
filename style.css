@@ -1,0 +1,193 @@
+    /* =======================================================
+    CSE 110 – Lab 3
+    ======================================================= */
+
+    @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+    :root 
+    {
+        --brand-primary: hsl(270, 12%, 13%); /*main color*/
+        --spacing-unit1: 1rem;        
+    }
+    
+    * 
+    {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    body 
+    {
+        font-family: "Inter", Arial, sans-serif;
+        background-color: var(--brand-primary, var(--brand-primary-fallback));
+        color: rgb(255, 255, 255);
+        line-height: 1.5;
+    }
+    
+
+    header 
+    {
+        position: sticky;
+        top: 0;
+        background: color-mix(in srgb, var(--brand-primary), rgb(128, 115, 160));
+        padding: var(--spacing-unit);
+        border-bottom: 4px solid #ffffff;
+        text-align: center;
+    }
+    
+    header h1,
+    header h2 
+    {
+        color: rgb(255 255 255 / .9);
+        margin-bottom: .3em;
+    }
+    
+
+    nav ul 
+    {
+        list-style: none;
+        display: flex;        
+        flex-wrap: wrap;
+        gap: .75rem;
+        justify-content: left;
+        margin: var(--spacing-unit) auto;
+        padding: 0;  
+        max-width: 75ch;
+    }
+    
+    
+    nav ul li a 
+    {
+        display: block;
+        padding: .5em 1em;
+        text-decoration: none;
+        color: white;
+        background: hsla(279, 15%, 57%, 0.15);
+        border: 2px solid transparent;
+        border-radius: .3rem;
+        transition: all .15s ease-in-out;
+    }
+    
+    nav ul li a:hover 
+    { /*cool white hover effect*/
+        background: white;
+        color: var(--brand-primary);
+    }
+    
+    nav ul li a:active 
+    {
+        transform: scale(.9);
+    }
+    
+    main > section 
+    {
+        margin: 1.5rem 2rem 2rem;
+        padding-top: 1rem;          
+    }
+    
+    section h2 + p 
+    {
+        font-style: italic;
+    }
+    
+    section h2 ~ ul 
+    {
+        margin-left: 1.5rem;
+    }
+    
+    
+    section:has(> details) 
+    {
+        border-left: 4px solid #584b71;
+        padding-left: 1rem;
+    }
+    
+    .card 
+    {
+        background: #342d3a;
+        padding: var(--spacing-unit);
+        border: 1px solid #8b6ca2;
+        & h2 
+        {
+            margin-top: 0;
+        }
+    }
+    
+
+    #media 
+    {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: var(--spacing-unit);
+        align-items: start;   
+        margin-bottom: 3rem;
+    }
+        
+
+    #media h3 
+    {
+        grid-column: 1 / -1; 
+        margin-top: var(--spacing-unit);
+        margin-bottom: .25rem;
+        color: #fff;
+    }
+        
+
+    #media figure,
+    #media video,
+    #media audio 
+    {
+        width: 100%;
+        max-width: 400px;
+        justify-self: center;    
+    }
+        
+    #media img 
+    { 
+        width: 100%;
+        height: auto;
+        max-width: 400px;
+        border-radius: .5cm;
+        border: 3px solid #333;
+    }
+        
+    #media audio 
+    {
+        display: block;
+        margin-inline: auto;
+    }
+        
+
+    input[type="radio"] 
+    {
+        accent-color: var(--brand-primary);
+    }
+    
+    button 
+    {
+        display: inline-block;
+        padding: .5em 1.25em;
+        font-weight: 700;
+        color: rgb(255, 255, 255);
+        background: rgb(105 88 114);
+        border: none;
+        border-radius: .25rem;
+        cursor: pointer;
+    }
+    
+    @media (max-width: 600px) 
+    { 
+        nav ul { flex-direction: column; }
+        header h1 { font-size: 1.35rem; }
+    }
+    
+    @media (min-width: 400px) 
+    {
+        body { max-width: 80%; margin-inline: auto; }
+    }
+
+    .hide { display: none; }
+    .text-center { text-align: center; }
+    
+    
